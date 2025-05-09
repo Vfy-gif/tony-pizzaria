@@ -91,15 +91,15 @@ section{
 .container-top span {
     color: var(--primary-color);
 }
-.container-pizza {
+.container-produtos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pizza {
+.produto {
     position: relative;
     display: grid;
-    box-shadow: 0 4px 8px #0005;;
+    box-shadow: 0 4px 8px #0005;
     border-radius: 12px;
 }
 .add-pizza {
@@ -119,7 +119,7 @@ section{
     transition: 1s;
 }
 
-.pizza:hover .add-pizza {
+.produto:hover .add-pizza {
     opacity: 1;
 }
 .overflow{
@@ -143,7 +143,8 @@ section{
     border-radius: 0 0 8px 8px;
     transition: .6s;
 }
-.pizza:hover .container-info {
+
+.produto:hover .container-info {
     bottom: 0;
 }
 .container-info p {
@@ -165,8 +166,68 @@ section{
 }
 
 .cardapio {
-    background-color: purple;
+    background-color: white;
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
 }
+.cardapio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--primary-color);
+    height: 260px;
+}
+
+.cardapio-item:last-child {
+    border: none;
+}
+.section-title {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.section-title h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.item-texto {
+    display: flex;
+    justify-content: space-between;
+}
+.item-texto h4,
+.item-texto a {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.bebida {
+    box-shadow: none;
+    transition: 0.5s;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.bebida:hover {
+    box-shadow: 0 4px 8px #0005;;
+}
+
+.bebida p{
+    width: 100%;
+}
+.bebida .preco{
+    color: var(--primary-color);
+}
+
+.bebida .descricao {
+    font-size: 0.6rem;
+}
+
 .servicos {
     background-color: gold;
 }
