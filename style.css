@@ -426,3 +426,45 @@ footer nav {
         margin-bottom: 64px;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    :root {
+        --default-padding: 0 48px;
+    }
+    header {
+        left: 0;
+        top: 64px;
+        position: absolute;
+        background-color: black;
+    }
+     header menu {
+        width: 100%;
+        height: 64px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: var(--primary-color);
+        color: #fff;
+        justify-content: space-evenly;
+    }
+    header img:nth-child(1) {
+        background-image: url(./img/logo-branco.svg);
+        
+    }
+    .home {
+        width: 100vh;
+        height: 100vh;
+        background-image: url(./img/background-mobile.png);
+        position: relative;
+        background-color: var(--primary-color);
+    }
+    .container-top img {
+        opacity:var(--primary-color);
+    }
+
+    .container-top img {
+        opacity: 0;
+    }
+}
