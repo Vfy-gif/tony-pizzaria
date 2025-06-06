@@ -448,17 +448,24 @@ footer nav {
         background-color: var(--primary-color);
         color: #fff;
         justify-content: space-evenly;
+        background-color: blue;
     }
     header img:nth-child(1) {
         background-image: url(./img/logo-branco.svg);
         
     }
-    .home {
+
+    main {
+        background-color: #000;
+    }
+
+    main .home {
         width: 100vh;
         height: 100vh;
         background-image: url(./img/background-mobile.png);
         position: relative;
         background-color: var(--primary-color);
+        
     }
     .container-top img {
         opacity:var(--primary-color);
